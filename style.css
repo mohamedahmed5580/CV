@@ -584,7 +584,7 @@ p {
   width: 550px;
   height: 410px;
   border-radius: 25px;
-  margin-left: 120px;
+  margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
