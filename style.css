@@ -544,24 +544,28 @@ p {
 }
 /* end main content */
 /* start project */
-.projects_page .boxs {
+
+.projects_page .tybe1{
+  display: block;
+}
+.projects_page .tybe1 .boxs {
   display: flexbox;
   text-align: center !important;
   margin-top: 40px;
   position: absolute;
 }
-.projects_page h2 {
+.projects_page .tybe1 h2 {
   font-size: 48px;
   font-family: "Inter", sans-serif;
   padding-top: 50px;
   margin-left: 10px;
   color: var(--secondary-color);
 }
-.projects_page h2 span {
+
+.projects_page  .tybe1 h2 span {
   color: var(--main-color);
 }
-.projects_page .boxs .box {
-  position: relative;
+.projects_page  .tybe1 .boxs .box {
   width: 770px;
   height: 500px;
   border-radius: 30px;
@@ -570,7 +574,7 @@ p {
   overflow: hidden;
   margin-bottom: 100px;
 }
-.projects_page .boxs .box .img_background {
+.projects_page  .tybe1 .boxs .box .img_background {
   width: 100%;
   height: 410px;
   background: url(image/projects-background.jpg);
@@ -578,7 +582,7 @@ p {
   border-radius: 25px;
   z-index: 55;
 }
-.projects_page .boxs .box .img {
+.projects_page .tybe1 .boxs .box .img {
   position: absolute;
   display: block;
   width: 550px;
@@ -591,7 +595,7 @@ p {
   margin-top: 120px;
   z-index: 500;
 }
-.projects_page .boxs .box .cover {
+.projects_page .tybe1 .boxs .box .cover {
   position: absolute;
   top: 0;
   width: 770px;
@@ -600,8 +604,8 @@ p {
   background-color: #1f1f1f78;
   overflow: hidden;
 }
-.projects_page .boxs .box .cover .links,
-.projects_page .boxs .box-center .cover .links {
+.projects_page .tybe1 .boxs .box .cover .links,
+.projects_page .tybe1 .boxs .box-center .cover .links {
   display: inline-block;
   position: relative;
   right: 250px;
@@ -609,8 +613,8 @@ p {
   padding: 10px;
   z-index: 50000;
 }
-.projects_page .boxs .box .cover .links .link,
-.projects_page .boxs .box-center .cover .links .link {
+.projects_page .tybe1 .boxs .box .cover .links .link,
+.projects_page .tybe1 .boxs .box-center .cover .links .link {
   display: inline-block;
   text-decoration: none;
   color: var(--secondary-color);
@@ -621,25 +625,25 @@ p {
   transition: 0.5s;
 }
 
-.projects_page .boxs .box .cover .links .link:hover,
-.projects_page .boxs .box-center .cover .links .link:hover {
+.projects_page .tybe1 .boxs .box .cover .links .link:hover,
+.projects_page .tybe1 .boxs .box-center .cover .links .link:hover {
   background-color: var(--secondary-color);
   color: var(--secondary2-color);
 } 
-.projects_page .boxs .box .header-project {
+.projects_page .tybe1 .boxs .box .header-project {
   margin-top: 10px;
   color: var(--section-background);
   padding: 5px;
   text-align: left;
 }
-.projects_page .boxs .box .header-project .project-link:hover {
+.projects_page .tybe1 .boxs .box .header-project .project-link:hover {
   border-bottom: 1px solid var(--secondary-color);
 }
-.projects_page .boxs .box .header-project .project-link {
+.projects_page .tybe1 .boxs .box .header-project .project-link {
   color: var(--section-background);
   text-decoration: none;
 }
-.projects_page .boxs .box-center {
+.projects_page .tybe1 .boxs .box-center {
   display: inline-block;
   position: relative;
   width: 400px;
@@ -650,13 +654,126 @@ p {
   overflow: hidden;
   margin-bottom: 100px;
 }
-.projects_page .boxs .box-center .cover .img {
+.projects_page .tybe1 .boxs .box-center .cover .img {
   width: 370px;
   height: 373px;
   margin-left: 10px;
   margin-right: 10px;
 }
+.projects_page .tybe2 h2 {
+  font-size: 48px;
+  font-family: "Inter", sans-serif;
+  padding-top: 50px;
+  margin-left: 10px;
+  color: var(--secondary-color);
+}
+.projects_page .tybe2 .boxs {
+  text-align: center !important;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-column-gap: 40px;
+  grid-row-gap: 60px;
+  position: relative;
+}
+.projects_page  .tybe2 h2 span {
+  color: var(--main-color);
+}
+.projects_page  .tybe2 .boxs .box {
+  width: 770px;
+  height: 500px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+.projects_page  .tybe2 .boxs .box .img_background {
+  width: 100%;
+  height: 410px;
+  background: url(image/projects-background.jpg);
+  background-size: cover;
+  border-radius: 25px;
+  z-index: 55;
+}
+.projects_page .tybe2 .boxs .box .img {
+  position: absolute;
+  display: block;
+  width: 550px;
+  height: 410px;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin-top: 120px;
+  z-index: 500;
+}
+.projects_page .tybe2 .boxs .box .cover {
+  position: absolute;
+  top: 0;
+  width: 770px;
+  height: 410px;
+  border-radius: 25px;
+  background-color: #1f1f1f78;
+  overflow: hidden;
+}
+.projects_page .tybe2 .boxs .box .cover .links,
+.projects_page .tybe2 .boxs .box-center .cover .links {
+  display: inline-block;
+  position: relative;
+  right: 250px;
+  top: 350px;
+  padding: 10px;
+  z-index: 50000;
+}
+.projects_page .tybe2 .boxs .box .cover .links .link,
+.projects_page .tybe2 .boxs .box-center .cover .links .link {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: small;
+  padding: 10px;
+  background-color: var(--secondary2-color);
+  border-radius: 50px;
+  transition: 0.5s;
+}
 
+.projects_page .tybe2 .boxs .box .cover .links .link:hover,
+.projects_page .tybe2 .boxs .box-center .cover .links .link:hover {
+  background-color: var(--secondary-color);
+  color: var(--secondary2-color);
+} 
+.projects_page .tybe2 .boxs .box .header-project {
+  margin-top: 10px;
+  color: var(--section-background);
+  padding: 5px;
+  text-align: left;
+}
+.projects_page .tybe2 .boxs .box .header-project .project-link:hover {
+  border-bottom: 1px solid var(--secondary-color);
+}
+.projects_page .tybe2 .boxs .box .header-project .project-link {
+  color: var(--section-background);
+  text-decoration: none;
+}
+.projects_page .tybe2 .boxs .box-center {
+  display: inline-block;
+  position: relative;
+  width: 400px;
+  height: 500px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+.projects_page .tybe2 .boxs .box-center .cover .img {
+  width: 370px;
+  height: 373px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 /* start for phone */
 @media (max-width: 725px) {
   .body-overlay {
@@ -755,19 +872,19 @@ p {
   .content .skils_page .boxs .box:hover h5 {
     color: var(--main-color);
   }
-  .projects_page .boxs .box {
+  .projects_page .tybe1 .boxs .box {
     width: 395px;
     left: 0;
     right: 0;
   }
-  .projects_page .boxs .box .img_background {
+  .projects_page .tybe1 .boxs .box .img_background {
     width: 100%;
     height: 410px;
     background: url(image/projects-background.jpg);
     background-size: cover;
     z-index: 55;
   }
-  .projects_page .boxs .box .img {
+  .projects_page .tybe1 .boxs .box .img {
     position: absolute;
     display: block;
     width: auto;
@@ -780,10 +897,46 @@ p {
     margin-top: 50px;
     z-index: 500;
   }
-  .projects_page .boxs .box .cover .links {
+  .projects_page .tybe1 .boxs .box .cover .links {
     padding: 0;
   }
-  .projects_page .boxs .box .header-project {
+  .projects_page .tybe1 .boxs .box .header-project {
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid var(--secondary-color);
+  }
+  
+
+
+  .projects_page .tybe2 .boxs .box {
+    width: 395px;
+    left: 0;
+    right: 0;
+  }
+  .projects_page .tybe2 .boxs .box .img_background {
+    width: 100%;
+    height: 410px;
+    background: url(image/projects-background.jpg);
+    background-size: cover;
+    z-index: 55;
+  }
+  .projects_page .tybe2 .boxs .box .img {
+    position: absolute;
+    display: block;
+    width: 370px;
+    height: 410px;
+    border-radius: 25px;
+    margin-left: 17px;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 50px;
+    z-index: 500;
+  }
+  .projects_page .tybe2 .boxs .box .cover .links {
+    padding: 0;
+  }
+  .projects_page .tybe2 .boxs .box .header-project {
     display: block;
     text-align: left;
     border-bottom: 1px solid var(--secondary-color);
